@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'bootstrap-5.0.2-dist/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    <title>Blog</title>
+</head>
+<body>
+<h1>Tanlangan bitta maqola ma'lumoti: </h1>
+<br>
+<h2>{{bitta_maqola.sarlavha}}</h2>
+<h2>{{bitta_maqola.matn}}</h2>
+
+<img src="{{bitta_maqola.rasm.url}}" alt="" style="width: 400px;">
+
+<h2>{{bitta_maqola.sana}}</h2>
+</body>
+</html>
